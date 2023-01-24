@@ -1,0 +1,36 @@
+.checkboxContainer {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.checkboxLabel {
+	margin-left: 15px;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 475;
+}
+
+.checkboxInput {
+	appearance: none;
+	position: relative;
+	width: 22px;
+	height: 22px;
+	margin: 0;
+	border-radius: 8px;
+	background-color: #ececec;
+	cursor: pointer;
+}
+
+.checkboxInput:checked::before {
+	position: absolute;
+	background-color: #457df1;
+	border-radius: 8px;
+	top: 5px;
+	left: 4px;
+	content: url(/src/assets/images/checked.svg);
+}
+
+.checkboxInput:checked {
+	background-color: #457df1;
+}
